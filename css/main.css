@@ -1,0 +1,1000 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:300i,800i");@import url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css");/* line 6, Users/Chaz/Dropbox/Sites/protrackoc.dev/site/_files/css/reset.scss */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+
+body {
+    line-height: 1
+}
+
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+.bp-step {
+    display: none;
+    background-color: green;
+    color: #fff;
+    padding: 0px 5px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999999;
+
+}
+
+
+  #rs-main{
+  background: url('../img/fast.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .mini-gallery img{
+  width: 590px;
+  height: 320px;
+  }
+  #rs-main.royalSlider.rsDefault.rsHor{
+
+    max-height: 934px;
+    height: 704px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .bp-step.step1 {
+        display:block
+    }
+    #rs-main.royalSlider.rsDefault.rsHor{
+
+      max-height: 934px;
+      height: 565px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bp-step.step2 {
+        display:block
+    }
+    #rs-main.royalSlider.rsDefault.rsHor{
+
+      max-height: 934px;
+      height: 462px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .bp-step.step3 {
+        display:block
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bp-step.step4 {
+        display:block
+    }
+    .slidedown {
+        position: relative;
+        top: -290px;
+        transition: all .4s ease-in-out
+
+    }
+    .godown.slidedown{
+      position: relative;
+      top: 0;
+
+     box-shadow: -1px 0 33px #000;
+      transition: all .4s ease-in-out
+
+    }
+}
+
+@media only screen and (max-width: 475px) {
+  .bp-step.step5 {
+        display:block;
+    }
+    #rs-main.royalSlider.rsDefault.rsHor{
+
+      max-height: 934px;
+      height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .bp-step.step6 {
+        display:block
+    }
+
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%
+}
+
+
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #666;
+    overflow-x: hidden
+}
+
+
+a:link,a:visited {
+    color: #666;
+    text-decoration: none;
+    outline: none
+}
+
+
+a:hover,a:active {
+    text-decoration: none
+}
+
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both
+}
+
+
+.middler {
+    width: auto;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-right: 50px;
+    padding-left: 50px
+}
+
+
+.content p,.content ul,.content ol {
+    padding-bottom: 25px
+}
+
+
+.cp-top {
+    padding-top: 125px
+}
+
+.cp-both {
+    padding-top: 125px;
+    padding-bottom: 125px
+}
+
+
+.cp-bottom {
+    padding-bottom: 125px
+}
+
+@media only screen and (max-width: 1250px) {
+  .cp-top {
+        padding-top:100px
+    }
+
+
+    .cp-both {
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+
+
+    .cp-bottom {
+        padding-bottom: 100px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cp-top {
+        padding-top:100px
+    }
+
+
+    .cp-both {
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+
+
+    .cp-bottom {
+        padding-bottom: 100px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+.cp-top {
+        padding-top:75px
+    }
+
+
+    .cp-both {
+        padding-top: 75px;
+        padding-bottom: 75px
+    }
+
+
+    .cp-bottom {
+        padding-bottom: 75px
+    }
+}
+@media only screen and (min-width: 700px) {
+
+  .m-nav a{
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+    body {
+        font-size:18px
+    }
+
+
+    .cp-top {
+        padding-top: 50px
+    }
+
+
+    .cp-both {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+
+    .cp-bottom {
+        padding-bottom: 50px
+    }
+
+
+    .middler {
+        padding-right: 25px;
+        padding-left: 25px
+    }
+    .navigation a {
+      display: none;
+    }
+    .m-nav a{
+
+      float: left;
+        width: 100%;
+        padding: 15px 0px;
+        border-top: 1px solid #c01a20;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .middler {
+        padding-right:15px;
+        padding-left: 15px
+    }
+}
+
+
+.royalSlider {
+    min-height: 300px
+}
+
+
+.banner {
+    background: url('../img/carbon-fiber.jpg') #111;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0px 15px 0px;
+    position: relative
+}
+
+.logo {
+    display: inline-block
+}
+
+
+.logo img {
+    display: block
+}
+
+
+.social-links {
+    font-size: 40px;
+    position: absolute;
+    top: 40px;
+    left: 40px
+}
+
+
+.social-links li {
+    display: inline-block;
+    padding: 0px 5px
+}
+
+
+.social-links a {
+    color: #fff
+}
+
+
+.number-location {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right
+}
+
+
+.number-location strong {
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 1px
+}
+
+
+.number-location span {
+    color: #999
+}
+
+.navigation-holder {
+    background-color: #ed1c24;
+    padding: 0px 20px
+}
+
+
+.navigation {
+    float: left
+}
+
+
+.navigation li {
+    float: left
+}
+
+
+.navigation a {
+    color: #fff;
+    float: left;
+    padding: 20px;
+    text-decoration: none
+}
+
+
+.ride-or-die {
+    float: right;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 1px
+}
+
+.mobile-nav-button {
+    display: none
+}
+
+
+.slider-holder {
+    clear: both
+}
+
+.mobile-phone {
+    display: none
+}
+
+
+@media only screen and (max-width: 1250px) {
+.logo img {
+        width:250px
+    }
+
+
+    .social-links {
+        top: 25px;
+        left: 30px
+    }
+
+
+    .number-location {
+        top: 35px;
+        right: 30px;
+        font-size: 14px
+    }
+
+
+    .navigation,.ride-or-die {
+        font-size: 18px
+    }
+
+
+    .navigation a {
+        padding: 15px
+    }
+
+
+    .ride-or-die {
+        padding: 15px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+.social-links {
+        font-size:30px;
+        top: 30px
+    }
+
+
+    .number-location {
+        top: 45px;
+        right: 30px
+    }
+
+
+    .number-location span {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .number-location strong {
+        font-size:23px
+    }
+
+
+    .navigation {
+        width: 100%;
+        height: 60px;
+        text-align: center
+    }
+
+
+    .navigation li {
+        float: none;
+        display: inline-block
+    }
+
+
+    .ride-or-die {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+        padding:15px 0px 10px 0px
+    }
+
+
+    .logo img {
+        width: 200px;
+        margin-left: 20px
+    }
+
+
+    .social-links {
+        top: 20px;
+        left: 20px
+    }
+
+    .number-location {
+        display: none
+    }
+
+
+    .mobile-nav-button {
+        display: block;
+        float: left;
+        font-size: 30px;
+        padding: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+    .navigation {
+        width: 100%;
+        height: auto;
+        clear: both;
+        text-align: center;
+        z-index: 99999;
+        position: static;
+        display: none;
+    }
+
+
+
+    .navigation li {
+        width: 100%;
+        display: block
+    }
+
+
+    .navigation a {
+        float: left;
+        width: 100%;
+        padding: 15px 0px;
+        border-top: 1px solid #c01a20
+    }
+
+
+    .ride-or-die {
+        display: block;
+        padding-right: 0px
+    }
+
+
+    .mobile-phone {
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        display: block
+    }
+
+
+    .mobile-phone a {
+        color: #fff
+    }
+}
+
+@media only screen and (max-width: 475px) {
+  .logo img {
+        width:150px;
+        margin-left: 15px
+    }
+
+
+    .social-links,.mobile-phone {
+        top: 15px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .navigation-holder {
+        padding:0px 10px
+    }
+
+
+    .social-links {
+        left: 10px
+    }
+
+
+    .mobile-phone {
+        right: 10px
+    }
+}
+
+
+.slider-holder {
+    position: relative
+}
+
+
+.thirty-mph {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    pointer-events: none
+}
+
+
+.thirty-mph img {
+    width: 75%;
+    max-width: 864px
+}
+
+
+.real-racing {
+    background: url('../img/carbon-fiber.jpg') #111;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 80px;
+    line-height: 0.8;
+    padding: 100px 25px;
+    color: #fff
+}
+
+
+.real-racing strong {
+    color: #e9f022
+}
+
+@media only screen and (max-width: 1250px) {
+  .real-racing {
+        font-size:70px;
+        padding: 75px 25px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .real-racing {
+        font-size:60px;
+        padding: 50px 25px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .real-racing {
+        font-size:45px;
+        padding: 50px 25px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .thirty-mph {
+        top:60%
+    }
+
+
+    .real-racing {
+        font-size: 30px;
+        padding: 25px
+    }
+}
+
+
+.track-outline {
+    width: 30%;
+    float: left
+}
+
+
+.track-outline img {
+    width: 100%
+}
+
+
+.track-details {
+    width: 60%;
+    float: right
+}
+
+
+.track-details ul {
+    font-size: 45px;
+    color: #111;
+    padding-top: 10px
+}
+
+
+.track-details p {
+    padding-bottom: 0px
+}
+
+
+.indent {
+    padding: 0px 40px
+}
+
+
+.indent .middler {
+    padding: 0px
+}
+
+@media only screen and (max-width: 1000px) {
+.track-details ul {
+        font-size:40px
+    }
+
+
+    .indent {
+        padding: 0px 30px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+  .track-details ul {
+        font-size:30px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .track-outline {
+        width:100%;
+        text-align: center;
+        padding-bottom: 20px
+    }
+
+
+    .track-outline img {
+        width: 50%
+    }
+
+
+    .track-details {
+        width: 100%
+    }
+
+
+    .indent {
+        padding: 0px 25px
+    }
+}
+
+@media only screen and (max-width: 475px) {
+  .track-details ul {
+        font-size:25px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .track-details ul {
+        font-size:20px
+    }
+
+
+    .indent {
+        padding: 0px 15px
+    }
+}
+
+.club-speed {
+    background-color: #F4F4F4;
+    text-align: center
+}
+
+
+.club-speed img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 20px;
+    max-width: 80%
+}
+
+
+.club-speed a {
+    font-weight: 800;
+    font-style: italic;
+    color: #f02f22
+}
+
+
+.club-speed br {
+    display: none
+}
+
+@media only screen and (max-width: 1250px) {
+  .club-speed br {
+        display:block
+    }
+}
+
+@media only screen and (max-width: 475px) {
+  .club-speed {
+        font-size:14px
+    }
+}
+
+
+.mini-gallery li {
+    width: 33.33%;
+    float: left
+}
+
+
+.mini-gallery img {
+    width: 100%;
+    display: block
+}
+
+@media only screen and (max-width: 1250px) {
+  .mini-gallery li {
+        width:50%
+    }
+
+
+    .mini-gallery li:nth-child(2) {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .mini-gallery li {
+        width:100%;
+        float: left
+    }
+
+
+    .mini-gallery li:nth-child(2) {
+        display: block
+    }
+
+    .monav.navigation {
+        width: 100%;
+        height: auto;
+        clear: both;
+        text-align: center;
+        z-index: 99999;
+        position: static;
+        display: block;
+    }
+}
+
+
+#googlemap,#googlemap iframe {
+    height: 600px;
+    overflow: hidden
+}
+
+
+#googleclick {
+    pointer-events: none
+}
+
+
+.direction {
+  background: #F4F4F4;
+  /*  border-bottom: 1px solid #ddd*/
+}
+
+
+.direction h2 {
+    font-size: 45px;
+    line-height: 1;
+    color: #111;
+    width: 30%;
+    float: left
+}
+
+
+.direction p {
+    width: 60%;
+    float: right
+}
+
+
+.direction strong {
+    font-weight: 800;
+    letter-spacing: 1px
+}
+
+@media only screen and (max-width: 1250px) {
+     */#googlemap,#googlemap iframe {
+        height:500px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  #googlemap,#googlemap iframe {
+        height:400px
+    }
+
+
+    .direction h2 {
+        font-size: 40px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+  .direction h2 {
+        font-size:30px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .direction h2 {
+        width:100%;
+        padding-bottom: 25px
+    }
+
+
+    .direction p {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .direction h2 {
+        font-size:25px
+    }
+}
+
+
+.coupon {
+    clear: both;
+    text-align: center
+}
+
+
+.coupon img {
+    clear: both;
+    width: 100%;
+    max-width: 850px
+}
+
+
+.grand-prix {
+    display: inline-block;
+
+    padding: 10px 20px
+}
+
+@media only screen and (max-width: 475px) {
+  .coupon {
+        font-size:14px
+    }
+
+}
+
+
+.footer {
+    background-color: #111;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    position: relative
+}
+
+
+.footer p {
+    padding: 0px
+}
+
+
+.footer a {
+    color: #999;
+    text-decoration: none
+}
+
+
+.footer img {
+    max-width: 70%
+}
+
+@media only screen and (max-width: 320px) {
+.footer {
+        font-size:12px
+    }
+}
